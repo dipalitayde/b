@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <h2>Asending and desending orders</h2>
+        <i id="my" style="color: blueviolet; font-family:cursive ;"></i>
+        <br>
+        <br>
+        <button onclick="ascending()">Ascending numbers</button><br>
+        <button onclick="descending()">Descending numbers</button>
+
+      
+           
+
+
+
+
+        
+        <script>
+            var points = [30, 20, 1, 3, 6, 8, 11];
+                document.getElementById("my").innerHTML = points;
+
+                function ascending() {
+                    points.sort(function (a, b) { return a - b });
+                    return
+                    document.getElementById("my").innerHTML = points;
+
+                }
+
+                function descending() {
+                    points.sort(function (a, b) { return b - a });
+                    document.getElementById("my").innerHTML = points;
+
+                }
+           
+
+
+
+        </script>
+    </body>
+</html>
